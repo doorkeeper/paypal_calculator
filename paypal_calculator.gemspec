@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Paul McMahon"]
   s.email       = ["paul@mobalean.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Calculate PayPal Fees}
+  s.description = %q{Rails javascript plugin for calculating PayPal fees}
 
   s.rubyforge_project = "paypal_calculator"
 
@@ -17,4 +17,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+
+  s.add_dependency 'rails', '~> 3.1'
+  s.add_dependency 'coffee-rails', '~> 3.1'
 end
