@@ -10,4 +10,4 @@ class root.PaypalCalculator
       0.032
     else
       0.029
-  basic_rate: 0.036
+  standard_rate: 0.036

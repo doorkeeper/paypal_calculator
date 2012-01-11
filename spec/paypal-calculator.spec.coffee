@@ -24,9 +24,9 @@ describe 'paypal calculator', ->
     calculator = new paypalCalculator.PaypalCalculator(1000*10000+1, 1)
     expect(calculator.merchant_rate).toEqual 0.029
 
-  it 'should not change basic rate with volume', ->
+  it 'should not change standard rate with volume', ->
     calculator = new paypalCalculator.PaypalCalculator(1000, 1)
-    expect(calculator.basic_rate).toEqual 0.036
+    expect(calculator.standard_rate).toEqual 0.036
 
     calculator = new paypalCalculator.PaypalCalculator(1000*10000+1, 1)
-    expect(calculator.basic_rate).toEqual 0.036
+    expect(calculator.standard_rate).toEqual 0.036
